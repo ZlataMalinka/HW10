@@ -1,0 +1,32 @@
+    1  git cofig --global user.name "ZlataMalinka"
+    2  git config --global user.name "ZlataMalinka"
+    3  git config --global user.email "tsaryk.zlata@gmail.com"
+    4  git clone https://github.com/ZlataMalinka/HW10.git
+    5  cd HW10
+    6  touch text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add .gitignore
+   10  git status
+   11  git commit -m "Update .gitignore file"
+   12  git push origin main
+   13  pwd
+   14  touch main_test.txt
+   15  git add .
+   16  git commit -m "Added empty main_test.txt file"
+   17  git push origin main
+   18  git checkout -b develop
+   19  touch develop_test.txt
+   20  git add .
+   21  git commit - "Created empty develop_test.txt file"
+   22  echo "just a small change" >> develop_test.txt
+   23  git status
+   24  git add develop_test.txt
+   25  git status
+   26  git commit -m "Added a small change to develop_test.txt
+   27  git commit -m "Added a small change to develop_test.txt"
+   28  git push origin develop
+   29  git checkout main
+   30  git merge develop
+   31  git log
+   32  history > command_list.cvs
